@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>MPEM2026</title>
+        <style>
+            body {
+              margin: 0;
+              font-family:Arial, Helvetica, sans-serif;
+              padding-left: 6vw;      /* 左余白 */
+              padding-right: 6vw;     /* 右余白 */
+            }
+          
+            .hero {
+              position: relative;
+              height: 100vh;
+
+              /* 背景画像 */
+              background-image: url("./img/bg.png"); /* ← 実際の画像パス */
+              background-size: cover;
+              background-position: center;
+              background-repeat: no-repeat;
+
+              /* body padding 打ち消し（必要なら） */
+              margin-left: -6vw;
+              margin-right: -6vw;
+              width: calc(100% + 12vw);
+              overflow: hidden;
+            }
+
+            /* 暗くするオーバーレイ */
+            .hero-overlay {
+              position: absolute;
+              inset: 0;
+              background: rgba(0, 0, 0, 0.1);
+              z-index: 0;
+            }
+            /* 文字の「枠」＝画像と同じ大きさ */
+            .hero-content {
+              position: relative;
+              z-index: 1;
+
+              height: 100%;                  /* ← hero と完全一致 */
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+
+              padding: 15vh 6vw;
+              color: white;
+              text-align: center;
+              box-sizing: border-box;
+            }
+            
+
+            /* 文字 */
+            .hero-text {
+              position: relative;
+              z-index: 1;
+
+              height: 100%;
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+
+              padding: 5vh 6vw;
+
+              color: white;
+              text-align: center;
+            }
+
+            .hero h1,
+            .hero h2 {
+              font-family: sans-serif;
+            }
+          
+            .hero-text p {
+              margin-top: 1rem;
+              font-size: clamp(1rem, 3vw, 1.5rem);
+            }
+            .info-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            max-width: 90vw;
+            margin: 0 auto;
+            }
+            .info-grid2 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            max-width: 90vw;
+            margin: 0 auto;
+            }
+
+            .info-btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            padding: 1.5rem 2rem;
+            background: linear-gradient(135deg, #99ff00, #2bff00);
+            border-radius: 10px;
+
+            font-family: sans-serif;
+            font-size: clamp(0.85rem, 3.5vw, 1.1rem);
+            font-weight: 700;
+            color: #fff;
+            text-decoration: none;
+            text-align: center;
+
+            box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+            }
+            .paragraph-card {
+              background: #99ff0022;
+              
+              border-radius: 10px;
+              box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+              padding: 1.2rem 1.5rem;
+              transition: transform 0.3s ease, box-shadow 0.3s ease;
+            }
+
+            .paragraph-card:hover {
+              transform: translateY(-3px);
+              box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            }
+
+            .paragraph-card h3 {
+              font-size: 1.3rem;
+              color: rgb(21, 139, 0);
+              margin-top: 0;
+              margin-bottom: 0.5rem;
+            }
+
+            .paragraph-card p {
+              font-size: 1rem;
+              line-height: 1.7;
+              color: #333;
+              margin: 0;
+            }
+
+        </style>
+    </head>
+    <body>
+      <div class="hero">
+        <div class="hero-overlay"></div>
+      
+        <div class="hero-content">
+          <div class="hero-top">
+            <h1>第25回分子予防環境医学研究会</h1>
+            <h2>Precision Public Health時代の分子予防環境医学</h2>
+            <h3>
+              The 24th Annual Meeting of Japanese Society for<br>
+              Molecular Preventive and Environmental Medicine
+            </h3>
+          </div>
+      
+          <div class="hero-bottom">
+            <h2>
+              2026年2月21日（土）、22日（日）<br>
+              東京大学内中島董一郎記念ホール
+            </h2>
+          </div>
+        </div>
+      </div>
+        
+
+        <h2 style="font-family: sans-serif; color: rgb(21, 139, 0);font-weight: bold;">第25回分子予防環境医学研究会</h2>
+        <p>Precision Public Health時代の分子予防環境医学<br>
+        2026年2月21日（土）、22日（日）<br>
+        東京大学内中島董一郎記念ホール
+        </p>
+        <div class="info-grid">
+          <a class="info-btn" href="mailto:mpem2026@gmail.com" target="_blank">
+            事務局Email
+          </a>
+        
+          <a class="info-btn" href="https://docs.google.com/forms/d/e/1FAIpQLSfd3UiN0QzpfAX3CnlVPKm2RkIdP8RKPv5l4cVO9zj2zIc-ug/viewform?usp=header" target="_blank">
+            参加登録
+          </a>
+
+          <a class="info-btn" href="template/jsmpem25-abstract-format.docx" target="_blank">
+            抄録投稿テンプレート（.docx）
+          </a>
+        </div>
+        <h2 style="font-family: sans-serif; color: rgb(21, 139, 0);font-weight: bold;">📣事務局からのお知らせ</h2>
+        <p>
+          2025/12/26 ウェブサイトオープンいたしました。
+        </p>
+        <h2 style="font-family: sans-serif; color: rgb(21, 139, 0);font-weight: bold;">📍会場について</h2>
+        <div class="info-grid2">
+          <div class="paragraph-card">
+            <h3>アクセス</h3>
+            <p>
+              東京大学農学部 フードサイエンス棟 中島董一郎記念ホール<br>
+              東京都文京区弥生1-1-1 東京大学弥生キャンパス内<br>
+              東京メトロ南北線 東大前より5分、 千代田線 根津より12分<br>
+            </p>
+          </div>
+          <div class="paragraph-card">
+            <h3>WiFi</h3>
+            <p>
+              会場ではUTokyo WiFiおよびeduroamが使用可能です。
+            </p>
+          </div>
+        </div>
+        <h2 style="font-family: sans-serif; color: rgb(21, 139, 0);font-weight: bold;">🍪参加・受付など</h2>
+        <div class="info-grid">
+          <div class="paragraph-card">
+            <h3>受付</h3>
+            <p>
+              参加登録時に発行されるQRコードつきネームタグを印刷し受付にお持ちください。
+            </p>
+          </div>
+          <div class="paragraph-card">
+            <h3>参加費</h3>
+            <p>
+              一般: 5000円<br>
+              学生・大学院生: 1000円<br>
+              当日受付にてお支払いいただきます。<br>
+            </p>
+          </div>
+          <div class="paragraph-card">
+            <h3>懇親会</h3>
+            <p>
+              2月21日夕刻に予定しております。詳細は決まり次第当ページにてご連絡いたします。
+            </p>
+          </div>
+        </div>
+        <h2 style="font-family: sans-serif; color: rgb(21, 139, 0);font-weight: bold;">🛫演題投稿</h2>
+          <p>指定のテンプレートを用いて作成し、事務局あてにお送りください。<br>
+            発表形式は口頭発表とします。<br>
+            演題募集の締め切りは、2026年1月23日(金)といたします。
+          </p>
+        <h2 style="font-family: sans-serif; color: rgb(21, 139, 0);font-weight: bold;">📖プログラム</h2>
+          <div class="info-grid">
+            <a class="info-btn" href="program.html" target="_blank">
+              最新版プログラムはこちら
+            </a>
+          
+          </div>
+        <h2 style="font-family: sans-serif; color: rgb(21, 139, 0);font-weight: bold;">🔬運営情報</h2>
+              <h3>大会長</h3>
+              <p>
+                石川俊平（東京大学大学院医学系研究科衛生学分野）
+              </p>
+              <h3>運営事務局</h3>
+              <p>
+                東京大学衛生学教室
+              </p>
+              <a href="https://plaza.umin.ac.jp/prm/">
+                <img src="img/logo-transparent.png" alt="サイトロゴ" width="120">
+              </a>               
+    </body>
+</html> 
