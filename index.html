@@ -14,7 +14,7 @@
           
             .hero {
               position: relative;
-              height: 100vh;
+              height: 50vh;
 
               /* 背景画像 */
               background-image: url("./img/bg.png"); /* ← 実際の画像パス */
@@ -56,7 +56,7 @@
               flex-direction: column;
               justify-content: space-between;
 
-              padding: 15vh 6vw;
+              padding: 6vh 3vw;
               color: white;
               text-align: center;
               box-sizing: border-box;
@@ -102,6 +102,13 @@
             max-width: 90vw;
             margin: 0 auto;
             }
+            .info-grid3 {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+            max-width: 90vw;
+            margin: 0 auto;
+            }
 
             .info-btn {
             display: flex;
@@ -109,7 +116,7 @@
             align-items: center;
 
             padding: 1.5rem 2rem;
-            background: linear-gradient(135deg, #11ff00, rgb(21, 139, 0));
+            background: linear-gradient(135deg, rgb(21, 139, 0), rgb(21, 139, 0));
             border-radius: 10px;
 
             font-family: sans-serif;
@@ -209,7 +216,7 @@
         2026年2月21日（土）、22日（日）<br>
         東京大学内中島董一郎記念ホール
         </p>
-        <div class="info-grid">
+        <div class="info-grid3">
           <a class="info-btn" href="mailto:mpem2026@gmail.com" target="_blank">
             事務局Email
           </a>
@@ -221,12 +228,16 @@
           <a class="info-btn" href="template/jsmpem25-abstract-format.docx" target="_blank">
             抄録投稿テンプレート（.docx）
           </a>
+
+          <a class="info-btn" href="program.html" target="_blank">
+            最新版プログラムはこちら
+          </a>
         </div>
-        <h2 style="font-family: sans-serif; color: rgb(21, 139, 0);font-weight: bold;">📣事務局からのお知らせ</h2>
+        <h2 style="font-family: sans-serif; color: rgb(21, 139, 0);font-weight: bold;">事務局からのお知らせ</h2>
         <p>
           2025/12/26 ウェブサイトオープンいたしました。
         </p>
-        <h2 style="font-family: sans-serif; color: rgb(21, 139, 0);font-weight: bold;">📍会場について</h2>
+        <h2 style="font-family: sans-serif; color: rgb(21, 139, 0);font-weight: bold;">会場について</h2>
         <div class="info-grid2">
           <div class="paragraph-card">
             <h3>アクセス</h3>
@@ -242,7 +253,7 @@
             </p>
           </div>
         </div>
-        <h2 style="font-family: sans-serif; color: rgb(21, 139, 0);font-weight: bold;">🍪参加・受付など</h2>
+        <h2 style="font-family: sans-serif; color: rgb(21, 139, 0);font-weight: bold;">参加・受付など</h2>
         <div class="info-grid">
           <div class="paragraph-card">
             <h3>受付</h3>
@@ -265,19 +276,13 @@
             </p>
           </div>
         </div>
-        <h2 style="font-family: sans-serif; color: rgb(21, 139, 0);font-weight: bold;">🛫演題投稿</h2>
+        <h2 style="font-family: sans-serif; color: rgb(21, 139, 0);font-weight: bold;">演題投稿</h2>
           <p>指定のテンプレートを用いて作成し、事務局あてにお送りください。<br>
             発表形式は口頭発表とします。<br>
             演題募集の締め切りは、2026年1月23日(金)といたします。
           </p>
-        <h2 style="font-family: sans-serif; color: rgb(21, 139, 0);font-weight: bold;">📖プログラム</h2>
-          <div class="info-grid">
-            <a class="info-btn" href="program.html" target="_blank">
-              最新版プログラムはこちら
-            </a>
-          
-          </div>
-        <h2 style="font-family: sans-serif; color: rgb(21, 139, 0);font-weight: bold;">🔬運営情報</h2>
+
+        <h2 style="font-family: sans-serif; color: rgb(21, 139, 0);font-weight: bold;">運営情報</h2>
               <h3>大会長</h3>
               <p>
                 石川俊平（東京大学大学院医学系研究科衛生学分野）
