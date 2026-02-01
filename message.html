@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>MPEM2026</title>
+        <style>
+            body {
+              margin: 0;
+              font-family:Arial, Helvetica, sans-serif;
+              padding-left: 6vw;      /* 左余白 */
+              padding-right: 6vw;     /* 右余白 */
+              padding-bottom: 50px;
+            }
+          
+            .hero {
+              position: relative;
+              height: 100vh;
+
+              /* 背景画像 */
+              background-image: url("./img/bg.png"); /* ← 実際の画像パス */
+              background-size: cover;
+              background-position: center;
+              background-repeat: no-repeat;
+
+              /* body padding 打ち消し（必要なら） */
+              margin-left: -6vw;
+              margin-right: -6vw;
+              width: calc(100% + 12vw);
+              overflow: hidden;
+            }
+
+            /* 暗くするオーバーレイ */
+            .hero-overlay {
+              position: absolute;
+              inset: 0;
+              background: rgba(0, 0, 0, 0.1);
+              z-index: 0;
+            }
+            /* 文字の「枠」＝画像と同じ大きさ */
+            .hero-content {
+              position: relative;
+              z-index: 1;
+
+              height: 100%;                  /* ← hero と完全一致 */
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+
+              padding: 15vh 6vw;
+              color: white;
+              text-align: center;
+              box-sizing: border-box;
+            }
+            
+
+            /* 文字 */
+            .hero-text {
+              position: relative;
+              z-index: 1;
+
+              height: 100%;
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+
+              padding: 5vh 6vw;
+
+              color: white;
+              text-align: center;
+            }
+
+            .hero h1,
+            .hero h2 {
+              font-family: sans-serif;
+            }
+          
+            .hero-text p {
+              margin-top: 1rem;
+              font-size: clamp(1rem, 3vw, 1.5rem);
+            }
+            .info-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            max-width: 90vw;
+            margin: 0 auto;
+            }
+            .info-grid2 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            max-width: 90vw;
+            margin: 0 auto;
+            }
+
+            .info-btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            padding: 1.5rem 2rem;
+            background: linear-gradient(135deg, rgb(21, 139, 0), rgb(21, 139, 0));
+            border-radius: 10px;
+
+            font-family: sans-serif;
+            font-size: clamp(0.85rem, 3.5vw, 1.1rem);
+            font-weight: 700;
+            color: #fff;
+            text-decoration: none;
+            text-align: center;
+
+            box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+            }
+            .paragraph-card {
+              background: #99ff0022;
+              
+              border-radius: 10px;
+              box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+              padding: 1.2rem 1.5rem;
+              transition: transform 0.3s ease, box-shadow 0.3s ease;
+            }
+
+            .paragraph-card:hover {
+              transform: translateY(-3px);
+              box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            }
+
+            .paragraph-card h3 {
+              font-size: 1.3rem;
+              color: rgb(21, 139, 0);
+              margin-top: 0;
+              margin-bottom: 0.5rem;
+            }
+
+            .paragraph-card p {
+              font-size: 1rem;
+              line-height: 1.7;
+              color: #333;
+              margin: 0;
+            }
+            
+            footer {
+              position: fixed;
+              bottom: 0;
+              left: 0;
+              width: 100%;
+              background: rgb(21, 139, 0);
+              color: white;
+              text-align: center;
+              padding: 8px;
+            }
+
+        </style>
+    </head>
+    <body>
+      <h2 style="font-family: sans-serif; color: rgb(21, 139, 0);font-weight: bold;">第25回分子予防環境医学研究会</h2>
+      <p>Precision Public Health時代の分子予防環境医学<br>
+        2026年2月21日（土）正午–22日（日）14時<br>
+      東京大学内中島董一郎記念ホール
+      </p>
+      <div class="info-grid">
+        <a class="info-btn" href="index.html" target="_blank">
+          Back to Home
+        </a>
+      </div>
+      <h2 style="font-family: sans-serif; color: rgb(21, 139, 0);font-weight: bold;">大会長挨拶</h2>
+      <div class="paragraph-card">
+        <h3>ご挨拶</h3>
+        <p>
+          
+
+          第25回分子予防環境医学研究会を、2026年2月21日（土）・22日（日）に東京大学内 中島董一郎記念ホールにて開催いたします。<br><br>
+
+          本大会のテーマは「Precision Public Health時代の分子予防環境医学」です。環境要因が複雑化する中で、ゲノム解析、単一細胞・空間オミクス、AI解析などの進展は、分子機序の理解を一段深めると同時に、予防を“より精密に設計する”可能性を広げています。本研究会が、分子科学と社会医学をつなぎ、実装可能な予防へ向けた議論の場となることを願っております。<br><br>
+
+          特別講演では、東京大学医科学研究所の柴田龍弘先生にがんゲノムの変異シグネチャと分子疫学についての話題をご講演いただきます。環境発がんをゲノム情報から捉え直す最前線の知見を共有いただける貴重な機会です。<br><br>
+
+          多様な一般演題も予定されております。分野・世代を越えた活発な討論と交流を通じて、新しい連携や研究の発展につながれば幸いです。皆様のご参加を心よりお待ち申し上げます。<br><br>
+
+          第25回分子予防環境医学研究会<br>
+          大会長　東京大学 大学院医学系研究科 衛生学分野　石川俊平
+        </p>
+      </div>
+    
+    <footer>
+      第25回分子予防環境医学研究会
+    </footer>
+    </body>
+</html> 
