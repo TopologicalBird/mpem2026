@@ -149,6 +149,56 @@
               text-align: center;
               padding: 8px;
             }
+            .timetable {
+              max-width: 90vw;
+              
+              display: flex;
+              flex-direction: column;
+              gap: 0.5rem;
+            }
+
+            .time-row {
+              display: grid;
+              grid-template-columns: 80px 1fr;
+              align-items: stretch;
+            }
+
+            .time-label {
+              font-weight: 700;
+              color: rgb(21, 139, 0);
+              font-size: 1.05rem;
+
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+
+              height: 100%;
+              padding: 0.2rem 0;
+            }
+
+              .time-label span {
+                display: block;
+              }
+
+              .session-link {
+                text-decoration: none;
+                color: inherit;
+              }
+
+              .session-link .paragraph-card {
+                cursor: pointer;
+                height: auto;
+              }
+
+              .session-title {
+                font-size: 1.25rem;
+                font-weight: 700;
+                color: rgb(21, 139, 0);
+              }
+
+
+            
+
 
         </style>
     </head>
@@ -175,8 +225,167 @@
       <p>現在演題募集中です
       </p>
       <h2 style="font-family: sans-serif; color: rgb(21, 139, 0);font-weight: bold;">タイムテーブル</h2>
-      <p>現在演題募集中です
-      </p>
+      <h3>1日目</h3>
+      <section class="timetable">
+
+        <div class="time-row">
+          <div class="time-label">
+            <span>13:00</span>
+            <span>　</span>
+          </div>
+      
+          <a class="session-link">
+            <div class="paragraph-card">
+              <div class="session-title">会長挨拶</div>
+            </div>
+          </a>
+        </div>
+        <div class="time-row">
+          <div class="time-label">
+            <span>　</span>
+            <span>13:10</span>
+          </div>
+      
+          <a class="session-link">
+            <div class="paragraph-card">
+              <div class="session-title">大会長挨拶</div>
+            </div>
+          </a>
+        </div>
+      
+        <div class="time-row">
+          <div class="time-label">
+            <span>　</span>
+            <span>14:00</span>
+          </div>
+      
+          <a href="session1.html" class="session-link">
+            <div class="paragraph-card">
+              <div class="session-title">レドックス制御による臓器保護・障害応答</div>
+              <p>Organ protection & stress response</p>
+            </div>
+          </a>
+        </div>
+        <div class="time-row">
+          <div class="time-label">
+            <span>14:15</span>
+            <span>15:25</span>
+          </div>
+      
+          <a href="session2.html" class="session-link">
+            <div class="paragraph-card">
+              <div class="session-title">環境・化学物質暴露とDNA/細胞障害</div>
+              <p>Environmental toxicology & genotoxicity</p>
+            </div>
+          </a>
+        </div>
+        <div class="time-row">
+          <div class="time-label">
+            <span>15:45</span>
+            <span>17:00</span>
+          </div>
+      
+          <a href="session3.html" class="session-link">
+            <div class="paragraph-card">
+              <div class="session-title">がん・先制医療・腫瘍免疫</div>
+              <p>Cancer biology, preventive medicine & tumor immunity</p>
+            </div>
+          </a>
+        </div>
+        <div class="time-row">
+          <div class="time-label">
+            <span>17:20</span>
+            <span>18:10</span>
+          </div>
+      
+          <a class="session-link">
+            <div class="paragraph-card">
+              <div class="session-title">特別講演</div>
+            </div>
+          </a>
+        </div>
+      
+      </section>
+      <h3>2日目</h3>
+      <section class="timetable">
+        <div class="time-row">
+          <div class="time-label">
+            <span>09:00</span>
+            <span>09:05</span>
+          </div>
+      
+          <a class="session-link">
+            <div class="paragraph-card">
+              <div class="session-title">大会長挨拶</div>
+            </div>
+          </a>
+        </div>
+      
+        <div class="time-row">
+          <div class="time-label">
+            <span>　</span>
+            <span>10:20</span>
+          </div>
+      
+          <a href="session4.html" class="session-link">
+            <div class="paragraph-card">
+              <div class="session-title">超硫黄・レドックス生物学の基盤機構</div>
+              <p>Supersulfide/Redox biology</p>
+            </div>
+          </a>
+        </div>
+        <div class="time-row">
+          <div class="time-label">
+            <span>10:35</span>
+            <span>11:20</span>
+          </div>
+      
+          <a href="session5.html" class="session-link">
+            <div class="paragraph-card">
+              <div class="session-title">免疫細胞制御と創薬・治療応用</div>
+              <p>Immunomodulation & drug development</p>
+            </div>
+          </a>
+        </div>
+        <div class="time-row">
+          <div class="time-label">
+            <span>11:25</span>
+            <span>11:40</span>
+          </div>
+      
+          <a class="session-link">
+            <div class="paragraph-card">
+              <div class="session-title">総会</div>
+            </div>
+          </a>
+        </div>
+        <div class="time-row">
+          <div class="time-label">
+            <span> </span>
+            <span>12:40</span>
+          </div>
+      
+          <a class="session-link">
+            <div class="paragraph-card">
+              <div class="session-title">昼食</div>
+            </div>
+          </a>
+        </div>
+        <div class="time-row">
+          <div class="time-label">
+            <span> </span>
+            <span>13:20</span>
+          </div>
+      
+          <a href="session6.html" class="session-link">
+            <div class="paragraph-card">
+              <div class="session-title">先端技術が拓く分子予防環境医学の新地平</div>
+              <p>Decoding molecular envoronments</p>
+            </div>
+          </a>
+        </div>
+      
+      </section>
     <footer>
       第25回分子予防環境医学研究会
     </footer>
